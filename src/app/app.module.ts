@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, RoutesRecognized } from '@angular/router';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -16,7 +15,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 const appRoutes: Routes = [
   {path: 'products', component: ProductListComponent },
-  {path: 'products/id', component: ProductPageComponent },
+  {path: 'products/:id', component: ProductPageComponent },
   {path: '', redirectTo: 'products', pathMatch: 'full'}
 ];
 
