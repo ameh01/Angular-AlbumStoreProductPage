@@ -3,9 +3,9 @@ import { Track } from './track';
 
 export interface Album {
 
-  typeof name === 'string';
-  typeof releaseDate === 'string';
-  typeof coverImage === 'string';
-  typeof tracks === Track[];
+  name: string;
+  releaseDate: string;
+  coverImage: string;
+  tracks: Track[];
 }
 
